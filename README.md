@@ -62,6 +62,10 @@ No production credentials are required for the first audit. A merchant or agency
 - orders: `transaction_id,value,currency`
 - measured purchases: `transaction_id,value,currency`
 
+**We are currently looking for 3 Shopify stores/agencies for the first real-world cohort.**
+
+➡️ [Request a pilot / join the 3-store cohort](https://github.com/othy19904-eng/conversionguard/issues/1)
+
 See [docs/PILOT.md](docs/PILOT.md) and [docs/SECURITY.md](docs/SECURITY.md).
 
 ## Product direction
