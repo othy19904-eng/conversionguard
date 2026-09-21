@@ -1,0 +1,15 @@
+[project]
+name = "conversionguard"
+version = "0.1.0"
+description = "Ecommerce conversion measurement integrity auditor."
+requires-python = ">=3.11"
+
+[project.scripts]
+conversionguard = "conversionguard.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
