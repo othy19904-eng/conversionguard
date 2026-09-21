@@ -1,0 +1,51 @@
+name: Pilot request
+description: Request a read-only ConversionGuard audit for a real ecommerce store.
+title: "[Pilot] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing ConversionGuard. Do not post credentials, customer PII, order exports, or private analytics data in a public issue.
+  - type: dropdown
+    id: role
+    attributes:
+      label: Your role
+      options:
+        - Merchant / store operator
+        - Ecommerce agency
+        - Analytics / tracking consultant
+        - Developer
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Store platform
+      options:
+        - Shopify
+        - WooCommerce
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: symptom
+    attributes:
+      label: What measurement problem are you seeing?
+      description: Describe symptoms only. Do not paste credentials or private customer/order data.
+    validations:
+      required: true
+  - type: checkboxes
+    id: exports
+    attributes:
+      label: Can you export matching order and purchase-conversion windows?
+      options:
+        - label: I can provide order and measured-purchase exports privately for the pilot.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Safety
+      options:
+        - label: I will not post credentials, customer PII, or private exports in this public issue.
+          required: true
